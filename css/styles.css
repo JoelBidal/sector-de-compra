@@ -1,0 +1,325 @@
+*{margin: 0; background-color: #eee;}
+
+#sectorCompra{
+    display: flex;
+    height: 90vh;
+    margin: 30px 85px 15px 85px;
+    background-color: #eee;
+}
+
+.boxGeneral{
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.boxGeneral, .galeriaImg{
+    background-color: #fff;
+}
+
+.boxZoom{border-radius: 5px;}
+
+.galeriaImg{
+    /* outline: 1px solid; */
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.galeriaImg .imagenes{
+    max-width: 40px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    padding: 2px 2px 2px 2px;
+    margin: 15px;
+}
+
+.imgProducto img{
+    max-width: 365px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxZoom{
+    display: flex;
+    background-color: #fff;   
+}
+
+
+
+/* Información del producto */
+
+.infoProducto{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #fff;
+    padding: 10px 0 0 0;
+}
+
+.nuevo{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 15px;
+    color: #949494;
+    background-color: #fff;   
+
+}
+
+.nombreCamara{
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 25px;
+    color: #000;
+    padding: 10px 0 8px 0;
+    background-color: #fff;   
+}
+
+.estrellas{
+    display: flex;
+    background-color: #fff;
+}
+.estrellas a{
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.estrellas .estrellaImg{
+    max-width: 13px;
+    height: auto;
+    background-color: #fff;
+    padding:2px;
+
+}
+
+.precio{
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 33px;
+    color: #000;
+    padding: 15px 0 10px 0;
+    background-color: #fff;   
+}
+
+.envio{
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    max-width: 120px;
+    letter-spacing: 0.02em;
+    background-color: #1c74f8;
+    border-radius: 4px ;
+    padding: 6px;
+    margin: 0px 0 20px 0;
+}
+.caracteristicas{background-color: #fff; }
+
+.caracteristicas li{
+    font-family: "Proxima Nova";
+    font-weight: 200;
+    font-size: 13px;
+    color: #949494;
+    background-color: #fff;   
+    line-height: 25px;
+}
+
+.opcionDeCompra{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    color: #000;
+    padding: 30px 0 0px 0;
+    background-color: #fff;   
+}
+
+.dosProductos{
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    color: #1460d1;
+    background-color: #fff;   
+
+}
+
+
+
+/* Información de la compra del producto */
+
+.infoCompra{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 300px;
+    height: 80vh;
+    /* outline: 1px solid; */
+    background-color: #fff;   
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding: 16px 16px 16px 16px;
+    margin-right: 20px;
+}
+
+.tarjeta{
+    display: flex;
+    width: 20px;
+    height: auto;
+}
+
+.pagaHasta{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #000;
+    background-color: #fff;
+}
+
+.conVisa{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.616);
+    background-color: #fff;
+}
+
+.masInfo{
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: #1460d1;
+    background-color: #fff;
+}
+
+.camion{
+    width: 20px;
+    height: auto;
+}
+
+.llegaGratis{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #96942d;
+    background-color: #fff;
+}
+
+.enviar{
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: #1460d1;
+    background-color: #fff;
+}
+
+.ubicacion{
+    width: 20px;
+    height: auto;
+}
+.retiraloGratis{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #96942d;
+    background-color: #fff;
+}
+
+.verMapa{
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: #1460d1;
+    background-color: #fff;
+}
+
+.vendidoPor{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.616);
+    background-color: #fff;
+}
+
+.vendidoPor .latitudesSur{
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: #1460d1;
+    background-color: #fff;
+}
+
+.ventas{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.616);
+    background-color: #fff;
+}
+
+.factura{
+    font-family: "Proxima Nova";
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.493);
+    background-color: #fff;
+}
+
+.boxUno, .boxDos, .boxTres, .boxCuatro, .boxCinco{
+    padding: 0 20px 20px 20px;
+    background-color: #fff;
+}
+
+span{
+    font-weight: 400;
+    background-color: #fff;
+
+}
+
+.btnComprarAhora{
+    border: 1px solid;
+    border-color: #3483fa;
+    border-radius: 4px;
+    background-color: #3483fa;
+    color: #fff;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 14px 16px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btnAgregarCarrito{
+    border: 1px solid;
+    border-color: #3483fa;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #3483fa;
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 14px 16px;
+    margin-top: 8px;
+    cursor: pointer;
+}
