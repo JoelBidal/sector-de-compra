@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sector de Compra</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type= "text/css" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div id="sectorCompra">
         <div class="boxGeneral">
             <div class="galeriaImg">
-                <img class="imagenes imagenUno" src="imagenes/imagenUno.jpg" alt="">
-                <img class="imagenes imagenDos" src="imagenes/imagenDos.jpg" alt="">
-                <img class="imagenes imagenTres" src="imagenes/imagenTres.jpg" alt="">
-                <img class="imagenes imagenCuatro" src="imagenes/imagenCuatro.jpg" alt="">
+                <img class="imagenes imagenUno" src="imagenes/imagenUno.jpg" id="1" value="1" onmouseover="cambia('1');">
+                <img class="imagenes imagenDos" src="imagenes/imagenDos.jpg" id="2" value="2" onmouseover="cambia('2');">
+                <img class="imagenes imagenTres" src="imagenes/imagenTres.jpg" id="3" value="3" onmouseover="cambia('3');">
+                <img class="imagenes imagenCuatro" src="imagenes/imagenCuatro.jpg" id="4" value="4" onmouseover="cambia('4');">
             </div>
             <div class="imgProducto">
-                <img src="imagenes/imagenUno.jpg" alt="">
+                <img class="imagenGaleriaGrande" id="espacioImagen" src="imagenes/imagenUno.jpg">
             </div>
             <div class="boxZoom">
                 <!-- Información del producto -->
                 <div class="infoProducto">
-                    <h2 class="nuevo">Nuevo</h2>
+                    <h2 class="nuevo">Nuevo <a class="corazon" href="#">
+                        <svg class="iconCorazon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"><g
+                        stroke-width="1.0"
+                        fill-rule="evenodd"><path
+                        stroke="#3483FA"
+                        d="M10.977 2.705C11.93 1.618 13.162 1 14.895 1c3.333 0 5.607 2.152 5.607 6.274 0 .08-.002.16-.005.24-.107 2.596-1.876 5.253-4.737 7.892a33.77 33.77 0 0 1-3.165 2.57 32.447 32.447 0 0 1-1.45.983l-.394.243-.394-.243-.009-.005-.021-.014-.08-.05a32.447 32.447 0 0 1-1.34-.914 33.77 33.77 0 0 1-3.165-2.57c-2.86-2.639-4.63-5.296-4.737-7.892A5.839 5.839 0 0 1 1 7.274C1 3.152 3.274 1 6.607 1c1.733 0 2.966.618 3.918 1.705.056.064.137.165.226.282.09-.117.17-.218.226-.282z"></path></g></svg>
+                    </a></h2>
                     <h1 class="nombreCamara">Sony Alpha 7 III</h1>
                     <div class="estrellas">
                         <a href="#"><img class="estrellaImg" src="imagenes/svg/estrella.svg" alt=""></a>
                         <a href="#"><img class="estrellaImg" src="imagenes/svg/estrella.svg" alt=""></a>
                         <a href="#"><img class="estrellaImg" src="imagenes/svg/estrella.svg" alt=""></a>
-                        <a href="#"><img class="estrellaImg" src="imagenes/svg/estrella.svg" alt="">(15)</a>
-                       
+                        <a href="#"><img class="estrellaImg" src="imagenes/svg/estrella.svg" alt=""></a>
+                        <span class="numero15">(15)</span>
                     </div>
                     <h2 class="precio">$352.715</h2>
                     <h3 class="envio">Envío con normalidad</h3>
@@ -51,11 +63,18 @@
                         <a class="masInfo" href="#">Más información</a>
                     </div>
                     <div class="boxDos">                        
-                        <h2 class="llegaGratis"><img class="camion" src="imagenes/svg/camion.svg">Llega gratis <span>entre el miércoles y el viernes 22 de mayo.</span></h2>
-                        <a class="enviar" href="#">Enviar a Italia 529</a>
+                        <h2 class="llegaGratis">Llega gratis <span>entre el miércoles y el viernes 22 de mayo.</span></h2>
+                        <a class="enviar" href="#"><svg class="puntoEnvio"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11"
+                            height="15"
+                            viewBox="0 0 12 16"><path
+                            fill-rule="nonzero"
+                            d="M6.456 15.227l-.457.536-.457-.536C2.255 11.37.594 8.178.594 5.605a5.405 5.405 0 0 1 10.81 0c0 2.573-1.66 5.765-4.948 9.622zM1.794 5.605c0 2.109 1.392 4.889 4.205 8.3 2.813-3.411 4.205-6.191 4.205-8.3a4.205 4.205 0 0 0-8.41 0zM6 6.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4z"></path>
+                        </svg>Enviar a Italia 529</a>
                     </div>
                     <div class="boxTres">                        
-                        <h2 class="retiraloGratis"><img class="ubicacion" src="imagenes/svg/ubicacion.svg">Retiralo gratis en correo y otros puntos <span>entre el jueves y el martes 26 de mayo</span></h2>
+                        <h2 class="retiraloGratis">Retiralo gratis en correo y otros puntos <span>entre el jueves y el martes 26 de mayo</span></h2>
                         <a class="verMapa" href="#">Ver en el mapa</a>
                     </div>
                     <div class="boxCuatro">
@@ -64,14 +83,14 @@
                         <h6 class="factura">Hace Factura A</h6>
                     </div>
                     <div class="boxCinco">
-                    <label for="select">Cantidad</label>
+                    <label for="select" class="cantidad">Cantidad:</label>
                         <select name="select">
-                            <option value="1unidad">1 unidad</option> 
-                            <option value="2unidad" selected>2 unidades</option>
+                            <option value="1unidad" selected>1 unidad</option> 
+                            <option value="2unidad">2 unidades</option>
                             <option value="3unidad">3 unidades</option>
                             <option value="4unidad">4 unidades</option>
                         </select>
-                    <label for="Select">(200) unidades</label>
+                    <label for="Select" class="unidades">(200) unidades</label>
                     </div>
 
                     <button class="btnComprarAhora" type="submit">Comprar ahora</button>
