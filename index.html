@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sector de Compra</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Sony Alpha 7 III | Mercado Libre</title>
+    <link rel="icon" type="image/png" href="imagenes/logoML.png">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type= "text/css" href="css/styles.css">
-    <script src="js/main.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.3/src/jquery.ez-plus.js"></script>
 </head>
 <body>
+    <div class="canalDeCompra">
+        <a class="volver" href="#">Volver al listado</a>
+        <ul>
+            <li class="textoSuperior">
+                <a class="textosLi" href="#">Cámaras y Accesorios</a>
+            </li>
+            <i class="fa fa-chevron-right"></i>
+            <li class="textoSuperior">
+                <a class="textosLi" href="#">Cámaras</a>
+            </li>
+            <i class="fa fa-chevron-right"></i>
+            <li class="textoSuperior">
+                <a class="textosLi" href="#">Cámaras Digitales</a>
+            </li>
+            <i class="fa fa-chevron-right"></i>
+            <li class="textoSuperior">
+                <a class="textosLi" href="#">Sony</a>
+            </li>
+            <i class="fa fa-chevron-right"></i>
+            <li class="textoSuperior">
+                <a class="textosLi" href="#">Sin espejo</a>
+            </li>
+        </ul>
+    </div>
     <div id="sectorCompra">
         <div class="boxGeneral">
             <div class="galeriaImg">
-                <img class="imagenes imagenUno" src="imagenes/imagenUno.jpg" id="1" value="1" onmouseover="cambia('1');">
-                <img class="imagenes imagenDos" src="imagenes/imagenDos.jpg" id="2" value="2" onmouseover="cambia('2');">
-                <img class="imagenes imagenTres" src="imagenes/imagenTres.jpg" id="3" value="3" onmouseover="cambia('3');">
-                <img class="imagenes imagenCuatro" src="imagenes/imagenCuatro.jpg" id="4" value="4" onmouseover="cambia('4');">
+                <img class="imagenes imagenUno" src="imagenes/large/imagenUno.jpg" id="1" value="1" onmouseover="cambia('1');">
+                <img class="imagenes imagenDos" src="imagenes/large/imagenDos.jpg" id="2" value="2" onmouseover="cambia('2');">
+                <img class="imagenes imagenTres" src="imagenes/large/imagenTres.jpg" id="3" value="3" onmouseover="cambia('3');">
+                <img class="imagenes imagenCuatro" src="imagenes/large/imagenCuatro.jpg" id="4" value="4" onmouseover="cambia('4');">
             </div>
             <div class="imgProducto">
-                <img class="imagenGaleriaGrande" id="espacioImagen" src="imagenes/imagenUno.jpg">
+                <img class="imagenGaleriaGrande" id="espacioImagen" src="imagenes/large/imagenUno.jpg" data-zoom-image="imagenes/large/imagenUno.jpg">
             </div>
             <div class="boxZoom">
                 <!-- Información del producto -->
@@ -43,7 +69,7 @@
                         <a href="#"><img class="estrellaImg" src="imagenes/svg/estrella.svg" alt=""></a>
                         <span class="numero15">(15)</span>
                     </div>
-                    <h2 class="precio">$352.715</h2>
+                    <h2 class="precio">$171.599</h2>
                     <h3 class="envio">Envío con normalidad</h3>
                     <div class="caracteristicas">
                         <li>Resolución de 24.2MP.</li>
@@ -53,7 +79,7 @@
                         <li>Velocidad máxima del obturador de 1/8000s.</li>
                     </div>
                     <h4 class="opcionDeCompra">Opciones de compra:</h4>
-                    <a class="dosProductos" href="#">2 productos nuevos desde $352.715</a>
+                    <a class="dosProductos" href="#">5 productos nuevos desde $171.599</a>
                 </div>
                 <!--  Información de la compra del producto   -->
                 <div class="infoCompra">
@@ -99,7 +125,7 @@
             </div>
         </div>
     </div>
-
-
+    <!-- JAVASCRIPT MAIN -->
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

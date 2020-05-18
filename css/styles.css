@@ -1,10 +1,60 @@
-*{margin: 0; background-color: #eee;}
+*{margin: 0;}
+
+.canalDeCompra{
+    display: flex;
+    width: 85%;
+    margin: 15px 0 0 85px;
+}
+
+.canalDeCompra .volver{
+    display: inline;
+    text-decoration: none;
+    color: #171718bd;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    padding-right: 12px;
+    border-right: 1px solid rgba(0, 0, 0, 0.308);
+    margin-right: 12px;
+}
+
+.canalDeCompra .volver:hover{color:#3483fa;}
+
+.canalDeCompra .textosLi, .compartir, .venderIgual{
+    display: inline;
+    text-decoration: none;
+    color: #3483fa;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+}
+
+.canalDeCompra ul{
+    padding: 0;
+}
+
+.textoSuperior{
+    display: inline;
+}
+
+.compartirVender{
+    position: relative;
+    left: 85px;
+}
+
+
+.fa-chevron-right{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.600);
+    font-weight: 100;
+    padding: 0 3px 0 3px;
+}
+
+/* Sector de la compra Mercado Libre*/
 
 #sectorCompra{
     display: flex;
     height: 90vh;
     width: 85%;
-    margin: 30px 85px 15px 85px;
+    margin: 10px 85px 0 85px;
     background-color: #eee;
 }
 
@@ -20,6 +70,7 @@
 }
 
 .boxZoom{border-radius: 5px;}
+
 
 .galeriaImg{
     /* outline: 1px solid; */
@@ -44,22 +95,25 @@
     border: 1px solid #3483fa;     
 }
 
+.imgProducto{
+    width: auto;
+    height: 100%;
+}
+
 .imgProducto img{
     /* outline: 1px solid; */
     max-width: 400px;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    margin-top: 100px;
     background-color: #fff;
 }
 
 .boxZoom{
     display: flex;
-    background-color: #fff;   
+    background-color: #fff;
 }
-
-
 
 /* Información del producto */
 
@@ -68,7 +122,7 @@
     flex-direction: column;
     width: 350px;
     background-color: #fff;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 20px;
 }
 
 .nuevo{
@@ -138,7 +192,7 @@
     font-weight: 400;
     font-size: 33px;
     color: #000;
-    padding: 15px 0 10px 0;
+    padding: 15px 0 5px 0;
     background-color: #fff;   
 }
 
@@ -150,7 +204,7 @@
     max-width: 135px;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: #1c74f8;
+    background-color: #1c74f8cc;
     border-radius: 4px ;
     padding: 6px;
     margin: 0px 0 20px 0;
@@ -205,7 +259,7 @@
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 10px;
     padding: 16px 16px 16px 16px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 
@@ -243,6 +297,8 @@
 .masInfo:hover{color:#0040a0;}
 .verMapa:hover{color:#0040a0;}
 .enviar:hover{color:#0040a0;}
+.puntoEnvio:hover{color:#0040a0;}
+.dosProductos:hover{color:#0040a0;}
 
 .llegaGratis{
     font-family: "Proxima Nova";
@@ -259,6 +315,7 @@
     fill:#3483fa;
     margin-right: 6px;
 }
+
 
 .enviar{
     text-decoration: none;
@@ -388,7 +445,7 @@ span{
     font-size: 18px;
     font-weight: 100;
     padding: 14px 16px;
-    margin-top: 8px;
+    margin-top: 20px;
     transition: .2s;
     cursor: pointer;
 }
